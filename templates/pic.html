@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Results</title>
+    <link rel="stylesheet" href="main.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <style>
+        body {
+            background-color: #FFFFFF;
+        }
+    </style>
+</head>
+<body>
+
+
+</body>
+ {% for img_name in results %}
+
+	<img src="{{ img_name[0]}}"></img>
+
+         <p>:Face found in the database is: {{img_name[1]}} </p>
+
+
+
+	{% endfor %}
+</body>
+</html>
